@@ -24,7 +24,7 @@
 
 ### Behavioral
 📊 [Strategy Pattern](/examples/strategy)  
-🔎 Observer Pattern  
+🔎 [Observer Pattern](/examples/observer)
 🕹️ Command Pattern  
 👥 Template Method Pattern  
 ⏭️ Iterator Pattern  
