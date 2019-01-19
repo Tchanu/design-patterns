@@ -23,7 +23,7 @@
 
 
 ### Behavioral
-📊 [Strategy Pattern](https://github.com/Tchanu/design-patterns/tree/pattern-strategy/examples/strategy)  
+📊 [Strategy Pattern](/examples/strategy)  
 🔎 Observer Pattern  
 🕹️ Command Pattern  
 👥 Template Method Pattern  
@@ -54,5 +54,5 @@
 - [ ] create code of conduct
 - [x] add pattern list into readme
 - [x] group patterns by type
-- [ ] write some examples in typescript
+- [x] write some examples in typescript
 - [ ] add more todos 🤙🏻
