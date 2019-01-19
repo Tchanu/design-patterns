@@ -23,7 +23,7 @@
 
 
 ### Behavioral
-📊 Strategy Pattern  
+📊 [Strategy Pattern](https://github.com/Tchanu/design-patterns/tree/pattern-strategy/examples/strategy)  
 🔎 Observer Pattern  
 🕹️ Command Pattern  
 👥 Template Method Pattern  
