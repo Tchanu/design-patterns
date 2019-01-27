@@ -12,7 +12,7 @@
 
 
 ### Structural
-🎍 [Decorator Pattern](/examples/decorator)
+🎍 [Decorator Pattern](/examples/decorator)  
 🔌 Adapter Pattern  
 🏛️ Facade Pattern  
 ⚖️ Proxy Pattern  
