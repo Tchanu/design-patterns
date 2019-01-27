@@ -44,10 +44,10 @@
 
 
 ## Sources / Books
-- [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
-- [https://www.oreilly.com/library/view/head-first-design/0596007124/](https://www.oreilly.com/library/view/head-first-design/0596007124/)
-- [https://boostlog.io/@sonuton/23-javascript-design-patterns-5adb006847018500491f3f7f](https://boostlog.io/@sonuton/23-javascript-design-patterns-5adb006847018500491f3f7f)
-- [http://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp.pdf](http://www.cs.ox.ac.uk/jeremy.gibbons/publications/hodgp.pdf)
+- [Design Patterns For Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+- [refactoring.guru](https://refactoring.guru/design-patterns)
+- [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/0596007124/)
+- [23 JavaScript design patterns](https://boostlog.io/@sonuton/23-javascript-design-patterns-5adb006847018500491f3f7f)
 
 
 ## Todo
