@@ -3,7 +3,7 @@
 
 
 ### Creational
-🏭 Factory Method Pattern  
+🏭 [Factory Method Pattern](/examples/factory-method)  
 🗃️ Abstract Factory Pattern  
 🥇 Singleton Pattern  
 🏗️ Builder Pattern  
