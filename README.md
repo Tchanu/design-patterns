@@ -14,7 +14,7 @@
 ### Structural
 🎍 [Decorator Pattern](/examples/decorator)  
 🔌 Adapter Pattern  
-🏛️ Facade Pattern  
+🏛️ [Facade Pattern](/examples/facade)  
 ⚖️ Proxy Pattern  
 🌉 Bridge Pattern  
 🏳️‍🌈 Composite Pattern  
