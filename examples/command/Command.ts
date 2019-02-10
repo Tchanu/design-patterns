@@ -1,48 +1,48 @@
-import {Bulb} from "./Receiver";
+import { Bulb } from './Receiver';
 
 export interface Command {
-    execute();
+  execute();
 
-    undo();
+  undo();
 
-    redo();
+  redo();
 }
 
 // Command
 export class TurnOn implements Command {
-    constructor(
-        protected bulb: Bulb,
-    ) {
-    }
+  constructor(
+    protected bulb: Bulb,
+  ) {
+  }
 
-    execute() {
-        this.bulb.turnOn()
-    }
+  execute() {
+    this.bulb.turnOn();
+  }
 
-    undo() {
-        this.bulb.turnOff();
-    }
+  undo() {
+    this.bulb.turnOff();
+  }
 
-    redo() {
-        this.execute();
-    }
+  redo() {
+    this.execute();
+  }
 }
 
 export class TurnOff implements Command {
-    constructor(
-        protected bulb: Bulb,
-    ) {
-    }
+  constructor(
+    protected bulb: Bulb,
+  ) {
+  }
 
-    execute() {
-        this.bulb.turnOff()
-    }
+  execute() {
+    this.bulb.turnOff();
+  }
 
-    undo() {
-        this.bulb.turnOn();
-    }
+  undo() {
+    this.bulb.turnOn();
+  }
 
-    redo() {
-        this.execute();
-    }
+  redo() {
+    this.execute();
+  }
 }

@@ -1,6 +1,6 @@
-import {Bulb} from "./Receiver";
-import {TurnOff, TurnOn} from "./Command";
-import {RemoteControl} from "./Invoker";
+import { Bulb } from './Receiver';
+import { TurnOff, TurnOn } from './Command';
+import { RemoteControl } from './Invoker';
 
 // concrete receiver
 const bulb = new Bulb();

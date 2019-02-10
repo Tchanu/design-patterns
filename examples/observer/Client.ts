@@ -1,5 +1,5 @@
-import {Zoo} from './Observable';
-import {Animal} from "./Observer";
+import { Zoo } from './Observable';
+import { Animal } from './Observer';
 
 // zoo is publisher/observable
 const zoo$ = new Zoo();

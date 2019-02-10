@@ -1,5 +1,5 @@
-import {Toy} from './Product'
-import {createToy} from './Factory';
+import { Toy } from './Product';
+import { createToy } from './Factory';
 
 // create car
 const car: Toy = createToy('car');

@@ -1,4 +1,4 @@
-import {God} from "./Singleton";
+import { God } from './Singleton';
 
 const god1 = God.getInstance();
 const god2 = God.getInstance();

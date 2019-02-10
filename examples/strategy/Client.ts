@@ -1,7 +1,6 @@
-import {FastFly, NoFly} from './behaviour/Flying';
-import {SimpleTalk, NoTalk} from './behaviour/Talking';
-import {Animal} from './Context';
-
+import { FastFly, NoFly } from './behaviour/Flying';
+import { SimpleTalk, NoTalk } from './behaviour/Talking';
+import { Animal } from './Context';
 
 // duck can fly but can't talk
 const duck = new Animal(new FastFly(), new NoTalk());

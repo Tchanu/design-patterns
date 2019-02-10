@@ -1,17 +1,17 @@
 // base component
 export interface Coffee {
-    getCost(): number;
+  getCost(): number;
 
-    getDescription(): string;
+  getDescription(): string;
 }
 
 // concrete component
 export class SimpleCoffee implements Coffee {
-    getCost(): number {
-        return 5;
-    }
+  getCost(): number {
+    return 5;
+  }
 
-    getDescription(): string {
-        return 'Simple Coffee';
-    }
+  getDescription(): string {
+    return 'Simple Coffee';
+  }
 }

@@ -1,4 +1,4 @@
-import {HotDrinkMachine, MachineFacade} from "./Facade";
+import { HotDrinkMachine, MachineFacade } from './Facade';
 
 // initiate machine facade
 const machineFacade = new MachineFacade(new HotDrinkMachine());

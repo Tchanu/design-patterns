@@ -1,17 +1,19 @@
-import {Zoo} from "./Observable";
+import { Zoo } from './Observable';
 
 // base observer
 export interface Observer {
-    update(): void;
+  update(): void;
 }
 
 // concrete observer
 export class Animal implements Observer {
-    constructor(private zoo: Zoo,
-                private name: string) {
-    }
+  constructor(
+    private zoo: Zoo,
+    private name: string,
+  ) {
+  }
 
-    update() {
-        console.log(`${this.name}: ${this.zoo.getMessage()}`);
-    }
+  update() {
+    console.log(`${this.name}: ${this.zoo.getMessage()}`);
+  }
 }

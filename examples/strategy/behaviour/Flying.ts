@@ -1,15 +1,15 @@
 export default interface Flying {
-    fly(): void;
+  fly(): void;
 }
 
 export class FastFly implements Flying {
-    fly(): void {
-        console.log('fast fly');
-    }
+  fly(): void {
+    console.log('fast fly');
+  }
 }
 
 export class NoFly implements Flying {
-    fly(): void {
-        console.log('can\'t fly');
-    }
+  fly(): void {
+    console.log('can\'t fly');
+  }
 }

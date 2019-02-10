@@ -1,18 +1,18 @@
 // singleton class
 export class God {
     // to store singleton object
-    private static instance: God;
+  private static instance: God;
 
     // you can't instantiate singleton class
-    private constructor() {
-    }
+  private constructor() {
+  }
 
     // create/get singleton object
-    static getInstance(): God {
+  static getInstance(): God {
         // check if object is already created
-        if (!this.instance) {
-            this.instance = new God();
-        }
-        return this.instance;
+    if (!this.instance) {
+      this.instance = new God();
     }
+    return this.instance;
+  }
 }

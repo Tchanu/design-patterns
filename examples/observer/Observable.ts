@@ -1,38 +1,38 @@
-import {Observer} from './Observer';
+import { Observer } from './Observer';
 
 // base publisher
 interface Observable {
-    observers: Observer[];
+  observers: Observer[];
 
-    subscribe(observer: Observer): void;
+  subscribe(observer: Observer): void;
 
-    unSubscribe(observer: Observer): void;
+  unSubscribe(observer: Observer): void;
 
-    notify(): void;
+  notify(): void;
 }
 
 // concrete observable
 export class Zoo implements Observable {
-    observers: Observer[] = [];
-    private message: string;
+  observers: Observer[] = [];
+  private message: string;
 
-    subscribe(observer: Observer): void {
-        this.observers.push(observer);
-    }
+  subscribe(observer: Observer): void {
+    this.observers.push(observer);
+  }
 
-    unSubscribe(observer: Observer): void {
-        this.observers = this.observers.filter(__observer => __observer != observer);
-    }
+  unSubscribe(observer: Observer): void {
+    this.observers = this.observers.filter(obs => obs !== observer);
+  }
 
-    notify(): void {
-        this.observers.forEach((observer) => observer.update());
-    }
+  notify(): void {
+    this.observers.forEach(observer => observer.update());
+  }
 
-    pushMessage(message: string) {
-        this.message = message;
-    }
+  pushMessage(message: string) {
+    this.message = message;
+  }
 
-    getMessage() {
-        return this.message;
-    }
+  getMessage() {
+    return this.message;
+  }
 }

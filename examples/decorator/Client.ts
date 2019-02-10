@@ -1,5 +1,5 @@
-import {MilkCoffee, VanillaCoffee} from './Decorator'
-import {SimpleCoffee} from "./Component";
+import { MilkCoffee, VanillaCoffee } from './Decorator';
+import { SimpleCoffee } from './Component';
 
 // simple milk
 const simpleCoffee = new SimpleCoffee();
@@ -10,7 +10,6 @@ console.log(simpleCoffee.getDescription()); // Simple Coffee
 const milkCoffee = new MilkCoffee(simpleCoffee);
 console.log(milkCoffee.getCost()); // 7
 console.log(milkCoffee.getDescription()); // Simple Coffee, milk
-
 
 // coffee with vanilla
 const vanillaCoffee = new VanillaCoffee(simpleCoffee);
