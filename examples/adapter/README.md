@@ -1,0 +1,1 @@
+## Adapter Pattern(aka Wrapper)
