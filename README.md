@@ -13,7 +13,7 @@
 
 ### Structural
 🎍 [Decorator Pattern](/examples/decorator)  
-🔌 Adapter Pattern  
+🔌 [Adapter Pattern](/examples/adapter)    
 🏛️ [Facade Pattern](/examples/facade)  
 ⚖️ Proxy Pattern  
 🌉 Bridge Pattern  
