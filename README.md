@@ -16,7 +16,7 @@
 🔌 [Adapter Pattern](/examples/adapter)    
 🏛️ [Facade Pattern](/examples/facade)  
 ⚖️ [Proxy Pattern](/examples/proxy)  
-🌉 Bridge Pattern  
+🌉 [Bridge Pattern](/examples/bridge)  
 🏳️‍🌈 Composite Pattern  
 🦋 Flyweight Pattern  
 🗄️ Module Pattern  
