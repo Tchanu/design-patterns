@@ -26,7 +26,7 @@
 📊 [Strategy Pattern](/examples/strategy)  
 🔎 [Observer Pattern](/examples/observer)  
 🕹️ [Command Pattern](/examples/command)  
-👥 Template Method Pattern  
+👥 [Template Method Pattern](/examples/template-method)  
 ⏭️ Iterator Pattern  
 🧠 State Pattern  
 ☢️ Null Object Pattern  
