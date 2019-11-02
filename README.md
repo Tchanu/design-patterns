@@ -7,7 +7,7 @@
 🗃️ Abstract Factory Pattern  
 🥇 [Singleton Pattern](/examples/singleton)  
 🏗️ Builder Pattern  
-🤖 Prototype Pattern  
+🤖 [Prototype Pattern](/examples/prototype)  
 💉 Dependency injection  
 
 
