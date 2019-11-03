@@ -43,16 +43,8 @@
 ➿ Function Composition  
 
 
-## Sources / Books
+## Resources
 - [Design Patterns For Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
 - [refactoring.guru](https://refactoring.guru/design-patterns)
 - [Head First Design Patterns](https://www.oreilly.com/library/view/head-first-design/0596007124/)
-- [23 JavaScript design patterns](https://boostlog.io/@sonuton/23-javascript-design-patterns-5adb006847018500491f3f7f)
 - [Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html)
-
-## Todo
-- [ ] create code of conduct
-- [x] add pattern list into readme
-- [x] group patterns by type
-- [x] write some examples in typescript
-- [ ] add more todos 🤙🏻
