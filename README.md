@@ -28,7 +28,7 @@
 🕹️ [Command Pattern](/examples/command)  
 👥 [Template Method Pattern](/examples/template-method)  
 ⏭️ [Iterator Pattern](/examples/iterator)  
-🧠 State Pattern  
+🧠 [State Pattern](/examples/state)  
 ☢️ Null Object Pattern  
 ⛓️ Chain of Responsibility Pattern  
 💭Interpreter Pattern  
