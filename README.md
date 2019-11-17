@@ -37,10 +37,8 @@
 👽 Visitor Pattern  
 
  
-### Functional
-〰️ Closure  
-➰ Currying  
-➿ Function Composition  
+#### Other
+➿ Fluent interface  
 
 
 ## Resources
