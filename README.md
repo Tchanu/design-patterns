@@ -6,7 +6,7 @@
 🏭 [Factory Method Pattern](/examples/factory-method)  
 🗃️ [Abstract Factory Pattern](/examples/abstract-factory)  
 🥇 [Singleton Pattern](/examples/singleton)  
-🏗️ Builder Pattern  
+🏗️ [Builder Pattern](/examples/builder)  
 🤖 [Prototype Pattern](/examples/prototype)  
 💉 Dependency injection  
 
