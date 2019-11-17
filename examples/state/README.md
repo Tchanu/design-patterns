@@ -1,2 +1,2 @@
-## Strategy Pattern
+## State Pattern
 ![UML diagram](diagram.png)
