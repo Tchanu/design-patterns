@@ -4,7 +4,7 @@
 
 ### Creational
 🏭 [Factory Method Pattern](/examples/factory-method)  
-🗃️ Abstract Factory Pattern  
+🗃️ [Abstract Factory Pattern](/examples/abstract-factory)  
 🥇 [Singleton Pattern](/examples/singleton)  
 🏗️ Builder Pattern  
 🤖 [Prototype Pattern](/examples/prototype)  
