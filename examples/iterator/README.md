@@ -1,2 +1,2 @@
-## Strategy Pattern
+## Iterator Pattern
 ![UML diagram](diagram.png)
