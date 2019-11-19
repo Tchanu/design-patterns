@@ -1,38 +1,19 @@
-/*
-  Scenario
-  Lado drained his battery and lost his Type C charger.
-  His friend Bazera has old Note 2 and borrowed old Type B usb charger
-  which is of course incompatible with Pixel.
-  Lado was still able to fully charge his phone and kept scrolling. How?
- */
+import { Duck } from './Duck';
+import { TurkeyAdapter } from './TurkeyAdapter';
+import { Turkey } from './Turkey';
 
-import { TypeBAdapter } from './Adapter';
+const duck = new Duck();
+const turkey = new Turkey();
 
-// Type C charger
-export class TypeC {
-  fastCharge(): void {
-    console.log('charging fast');
-  }
-}
+// wrap our turkey to behave like a duck
+const duckAdapter = new TurkeyAdapter(turkey);
 
-// Type B charger
-export class TypeB {
-  slowCharge(): void {
-    console.log('charging slow');
-  }
-}
+// is `duck` duck?
+duck.quack(); // quack!
+duck.walk(); // walk
+// definitely!
 
-// Lado's phone
-export class Pixel {
-  charge(usb: TypeC) {
-    usb.fastCharge();
-  }
-}
-
-// Bazera's charger
-const usbTypeB: TypeB = new TypeB();
-// create adapter for pixel
-const usbTypeBAdapter: TypeC = new TypeBAdapter(usbTypeB);
-
-const ladosPhone: Pixel = new Pixel();
-ladosPhone.charge(usbTypeBAdapter); // charging slow
+// is `duckAdapter` duck?
+duckAdapter.quack(); // gobble!
+duckAdapter.walk(); // walk
+// it can quack and walk so it must be duck!
