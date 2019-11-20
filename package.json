@@ -1,0 +1,21 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "`Design patterns are typical solutions to common problems in software design. Each pattern is like a blueprint that you can customize to solve a particular design problem in your code.` - Wikipedia",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tchanu/design-patterns.git"
+  },
+  "author": "Temo Jr. <t.chanukvadze@gmail.com> https://github.com/Tchanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tchanu/design-patterns/issues"
+  },
+  "homepage": "https://github.com/Tchanu/design-patterns#readme"
+}
