@@ -7,17 +7,18 @@
   ...
   Whole project was based on light design. All pages were filled with bright inline styles.
   Tom was pretty fucked up by this requirement he didn't expected. After one good night sleep
-  Tom found fascinating solution on the internet.
+  Tom found fascinating solution.
  */
 
-import { DarkTheme, LighTheme, Theme } from './Implementor';
-import { HomePage, InfoPage, Page } from './Abstraction';
+// we create theme instances to inject into pages
 
-// create theme instances
+import { DarkTheme, LightTheme, Theme } from './themes';
+import { HomePage, InfoPage, Page } from './pages';
+
 const darkTheme: Theme = new DarkTheme();
-const lightTheme: Theme = new LighTheme();
+const lightTheme: Theme = new LightTheme();
 
-// fill page with meaningful themes
+// basically solution is to switch from inheritance to composition
 const darkHomePage: Page = new HomePage(darkTheme);
 const darkInfoPage: Page = new InfoPage(darkTheme);
 const lightHomePage: Page = new HomePage(lightTheme);
