@@ -6,20 +6,34 @@
   database and manually sum salaries to calculate department cost. Long story short, developers
   found a way to replace these experts with a single program.
  */
-import { Organisation } from './Composite';
-import { Employee, Developer, HR, FinanceExpert } from './Component';
+import { Organization } from './Organization';
+import { Employee } from './Employee';
 
-// create some employees
-const andrew: Employee = new Developer();
-const kelly: Employee = new HR();
-const ramos: Employee = new FinanceExpert();
-const fox: Employee = new Developer();
+// create arbitrary leaves(employees)
+export class Developer implements Employee {
+  getSalary(): number {
+    return 3500;
+  }
+}
 
-// create organisation and fill workers
-const ansoft: Organisation = new Organisation();
-ansoft.addEmployee(andrew);
-ansoft.addEmployee(kelly);
-ansoft.addEmployee(ramos);
-ansoft.addEmployee(fox);
+export class HR implements Employee {
+  getSalary(): number {
+    return 2000;
+  }
+}
+
+export class FinanceExpert implements Employee {
+  getSalary(): number {
+    return 5000;
+  }
+}
+
+const ansoft: Organization = new Organization();
+
+// add workers into organization(create tree)
+ansoft.addEmployee(new Developer());
+ansoft.addEmployee(new HR());
+ansoft.addEmployee(new FinanceExpert());
+ansoft.addEmployee(new Developer());
 
 console.log(ansoft.getNetSalary()); // 14000
