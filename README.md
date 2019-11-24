@@ -3,32 +3,32 @@
 
 
 ### Creational
-🏭 [Factory Method Pattern](/examples/factory-method)  
-🗃️ [Abstract Factory Pattern](/examples/abstract-factory)  
-🥇 [Singleton Pattern](/examples/singleton)  
-🏗️ [Builder Pattern](/examples/builder)  
-🤖 [Prototype Pattern](/examples/prototype)  
+🏭 [Factory Method Pattern](/creational/factory-method)  
+🗃️ [Abstract Factory Pattern](/creational/abstract-factory)  
+🥇 [Singleton Pattern](/creational/singleton)  
+🏗️ [Builder Pattern](/creational/builder)  
+🤖 [Prototype Pattern](/creational/prototype)  
 💉 Dependency injection  
 
 
 ### Structural
-🎍 [Decorator Pattern](/examples/decorator)  
-🔌 [Adapter Pattern](/examples/adapter)    
-🏛️ [Facade Pattern](/examples/facade)  
-⚖️ [Proxy Pattern](/examples/proxy)  
-🌉 [Bridge Pattern](/examples/bridge)  
-🏳️‍🌈 [Composite Pattern](/examples/composite)  
+🎍 [Decorator Pattern](/structural/decorator)  
+🔌 [Adapter Pattern](/structural/adapter)    
+🏛️ [Facade Pattern](/structural/facade)  
+⚖️ [Proxy Pattern](/structural/proxy)  
+🌉 [Bridge Pattern](/structural/bridge)  
+🏳️‍🌈 [Composite Pattern](/structural/composite)  
 🦋 Flyweight Pattern  
 🗄️ Module Pattern  
 
 
 ### Behavioral
-📊 [Strategy Pattern](/examples/strategy)  
-🔎 [Observer Pattern](/examples/observer)  
-🕹️ [Command Pattern](/examples/command)  
-👥 [Template Method Pattern](/examples/template-method)  
-⏭️ [Iterator Pattern](/examples/iterator)  
-🧠 [State Pattern](/examples/state)  
+📊 [Strategy Pattern](/behavioral/strategy)  
+🔎 [Observer Pattern](/behavioral/observer)  
+🕹️ [Command Pattern](/behavioral/command)  
+👥 [Template Method Pattern](/behavioral/template-method)  
+⏭️ [Iterator Pattern](/behavioral/iterator)  
+🧠 [State Pattern](/behavioral/state)  
 ☢️ Null Object Pattern  
 ⛓️ Chain of Responsibility Pattern  
 💭Interpreter Pattern  
