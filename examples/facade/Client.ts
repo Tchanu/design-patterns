@@ -1,8 +1,8 @@
-import { HotDrinkMachine, MachineFacade } from './Facade';
+import { MachineFacade } from './MachineFacade';
+import { HotDrinkMachine } from './HotDrinkMachine';
 
-// initiate machine facade
-const machineFacade = new MachineFacade(new HotDrinkMachine());
+// create facade for very smart customer
+const userFriendlyFacade = new MachineFacade(new HotDrinkMachine());
 
-// simple interface to make drinks
-machineFacade.makeEspresso(); // Boiling water,Adding sugar,Adding Espresso, Serving.
-machineFacade.makeTea(); // Boiling water,Adding sugar,Adding tea, Serving.
+userFriendlyFacade.makeEspresso(); // Boiling water,Adding sugar,Adding Espresso, Serving.
+userFriendlyFacade.makeTea(); // Boiling water,Adding sugar,Adding tea, Serving.
