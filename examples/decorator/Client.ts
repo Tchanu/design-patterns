@@ -1,22 +1,24 @@
-import { MilkCoffee, VanillaCoffee } from './Decorator';
-import { SimpleCoffee } from './Component';
+import { Coffee } from './Coffee';
+import { VanillaCoffee } from './VanillaCoffee';
+import { MilkCoffee } from './MilkCoffe';
+import { SimpleCoffee } from './SimpleCoffee';
 
 // simple milk
-const simpleCoffee = new SimpleCoffee();
+const simpleCoffee: Coffee = new SimpleCoffee();
 console.log(simpleCoffee.getCost()); // 5
 console.log(simpleCoffee.getDescription()); // Simple Coffee
 
-// coffee with milk
-const milkCoffee = new MilkCoffee(simpleCoffee);
+// decorate simple coffee (base) with milk coffee (decorator)
+const milkCoffee: Coffee = new MilkCoffee(simpleCoffee);
 console.log(milkCoffee.getCost()); // 7
 console.log(milkCoffee.getDescription()); // Simple Coffee, milk
 
-// coffee with vanilla
-const vanillaCoffee = new VanillaCoffee(simpleCoffee);
+// decorate simple coffee (base) with vanilla coffee(decorator)
+const vanillaCoffee: Coffee = new VanillaCoffee(simpleCoffee);
 console.log(vanillaCoffee.getCost()); // 6
 console.log(vanillaCoffee.getDescription()); // Simple Coffee, vanilla
 
-// coffee with milk and vanilla
-const milkVanillaCoffee = new VanillaCoffee(milkCoffee);
+// we can decorate milk coffee(decorator) with vanilla coffee(another decorator)
+const milkVanillaCoffee: Coffee = new VanillaCoffee(milkCoffee);
 console.log(milkVanillaCoffee.getCost()); // 8
 console.log(milkVanillaCoffee.getDescription()); // Simple Coffee, milk, vanilla

@@ -1,11 +1,6 @@
-// base component
-export interface Coffee {
-  getCost(): number;
-
-  getDescription(): string;
-}
-
 // concrete component
+import { Coffee } from './Coffee';
+
 export class SimpleCoffee implements Coffee {
   getCost(): number {
     return 5;
