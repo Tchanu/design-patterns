@@ -7,26 +7,7 @@
   found a way to replace these experts with a single program.
  */
 import { Organization } from './Organization';
-import { Employee } from './Employee';
-
-// create arbitrary leaves(employees)
-export class Developer implements Employee {
-  getSalary(): number {
-    return 3500;
-  }
-}
-
-export class HR implements Employee {
-  getSalary(): number {
-    return 2000;
-  }
-}
-
-export class FinanceExpert implements Employee {
-  getSalary(): number {
-    return 5000;
-  }
-}
+import { Developer, FinanceExpert, HR } from './employees';
 
 const ansoft: Organization = new Organization();
 
@@ -34,6 +15,5 @@ const ansoft: Organization = new Organization();
 ansoft.addEmployee(new Developer());
 ansoft.addEmployee(new HR());
 ansoft.addEmployee(new FinanceExpert());
-ansoft.addEmployee(new Developer());
 
 console.log(ansoft.getNetSalary()); // 14000
