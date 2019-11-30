@@ -1,34 +1,30 @@
 /*
-  Scenario
-  There was office with only one door to get inside. One day somebody stole notebook.
-  Managers were arguing how to secure the office when one of them come up with a great idea,
-  add face recognition system to the door. Of course, developers didn't approve that, but
-  what else they've got to do?
+  Protection Proxy
  */
 
-import { FaceLockDoor } from './Proxy';
+import { ClientType, FaceLockDoor } from './FaceLockDoor';
+import { StandardDoor } from './StandardDoor';
 
-// Simple Door, you know what it does
-export interface Door {
-  open(): void;
+const standardDoor = new StandardDoor();
 
-  close(): void;
-}
+// anyone can open and close standard door
+standardDoor.open(); // opening the door
+standardDoor.close(); // closing the door
 
-// Office's unsecured door
-export class OfficesDoor implements Door {
-  open(): void {
-    console.log('closing office\'s door');
-  }
+// so let's add some security. create secure door where only employees are authorized
+const secureDoor = new FaceLockDoor(standardDoor, ClientType.Employee);
 
-  close(): void {
-    console.log('opening office\'s door');
-  }
-}
+// try to open without face scan
+secureDoor.open(); // access denied for Unknown
 
-// use FaceLockDoor proxy for OfficesDoor to make it secured
-const officesSecuredDoor = new FaceLockDoor(new OfficesDoor());
+// try to open door as guest
+secureDoor.fakeFaceScan(ClientType.Guest);
+secureDoor.open(); // access denied for Guest
 
-officesSecuredDoor.open('thiefsFace'); // access denied
-officesSecuredDoor.open('dummyManagersFace'); // opening office's door
-officesSecuredDoor.close(); // closing office's door
+// try to open door as employee
+secureDoor.fakeFaceScan(ClientType.Employee);
+secureDoor.open(); // opening the door
+secureDoor.close(); // closing the door
+// try to reopen door
+secureDoor.open(); // access denied for Unknown
+// after closing the door face scan is required to reopen
