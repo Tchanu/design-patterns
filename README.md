@@ -18,7 +18,7 @@
 ⚖️ [Proxy Pattern](/structural/proxy)  
 🌉 [Bridge Pattern](/structural/bridge)  
 🏳️‍🌈 [Composite Pattern](/structural/composite)  
-🦋 Flyweight Pattern  
+🦋 [Flyweight Pattern](/structural/flyweight)  
 🗄️ Module Pattern  
 
 
