@@ -30,7 +30,7 @@
 ⏭️ [Iterator Pattern](/behavioral/iterator)  
 🧠 [State Pattern](/behavioral/state)  
 ☢️ Null Object Pattern  
-⛓️ Chain of Responsibility Pattern  
+⛓️ [Chain of Responsibility Pattern](/behavioral/chain-of-responsibility)  
 💭Interpreter Pattern  
 🚦 Mediator Pattern  
 📝 Memento Pattern  
