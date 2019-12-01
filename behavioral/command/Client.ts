@@ -1,15 +1,16 @@
-import { Bulb } from './Receiver';
-import { TurnOff, TurnOn } from './Command';
-import { RemoteControl } from './Invoker';
+/*
+  Remote execution command
+ */
+import { Bulb } from './Bulb';
+import { RemoteControl } from './RemoteControl';
+import { TurnOffCommand, TurnOnCommand } from './commands';
 
-// concrete receiver
+// create command receiver with commands
 const bulb = new Bulb();
+const turnOnBulb = new TurnOnCommand(bulb);
+const turnOffBulb = new TurnOffCommand(bulb);
 
-// concrete commands
-const turnOnBulb = new TurnOn(bulb);
-const turnOffBulb = new TurnOff(bulb);
-
-// setup control
+// create command sender
 const remote = new RemoteControl();
 
 // submit bulb commands
