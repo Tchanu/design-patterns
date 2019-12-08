@@ -32,7 +32,7 @@
 ☢️ Null Object Pattern  
 ⛓️ [Chain of Responsibility Pattern](/behavioral/chain-of-responsibility)  
 💭Interpreter Pattern  
-🚦 Mediator Pattern  
+🚦 [Mediator Pattern](/behavioral/mediator)  
 📝 Memento Pattern  
 👽 Visitor Pattern  
 
