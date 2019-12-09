@@ -33,7 +33,7 @@
 ⛓️ [Chain of Responsibility Pattern](/behavioral/chain-of-responsibility)  
 💭Interpreter Pattern  
 🚦 [Mediator Pattern](/behavioral/mediator)  
-📝 Memento Pattern  
+💾 [Memento Pattern](/behavioral/memento)  
 👽 Visitor Pattern  
 
  
