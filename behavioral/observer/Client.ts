@@ -1,29 +1,46 @@
-import { Zoo } from './Observable';
-import { Animal } from './Observer';
+import { Newspaper } from './Newspaper';
+import { Subscriber } from './Subscriber';
 
-// zoo is publisher/observable
-const zoo$ = new Zoo();
+// create simple publish/subscribe example with newspaper and subscribes
 
-// create animals to observe
-const duck = new Animal(zoo$, 'duck');
-const human = new Animal(zoo$, 'human');
-const cat = new Animal(zoo$, 'cat');
+// create publishers and subscribers
+const theTimes = new Newspaper();
+const forbes = new Newspaper();
 
-// subscribe to observable
-zoo$.subscribe(duck);
-zoo$.subscribe(human);
-zoo$.subscribe(cat);
+const jack = new Subscriber('Jack');
+const olivia = new Subscriber('Olivia');
+const harry = new Subscriber('Harry');
+const amelia = new Subscriber('Amelia');
 
-// push and notify observers
-zoo$.pushMessage('I am from Earth');
-zoo$.notify();
-// duck: I am from Earth
-// human: I am from Earth
-// cat: I am from Earth
+theTimes.subscribe(jack);
+theTimes.subscribe(harry);
+forbes.subscribe(olivia);
+forbes.subscribe(harry);
+forbes.subscribe(amelia);
 
-// unsubscribe human from observable
-zoo$.unSubscribe(human);
-zoo$.pushMessage('I can\'t talk');
-zoo$.notify();
-// duck: I can't talk
-// cat: I can't talk
+// push message and notify all subscribed observers
+theTimes.pushMessage('checkout our new website: www.thetimes.co.uk');
+theTimes.notify();
+/*
+Hello Jack, checkout our new website: www.thetimes.co.uk
+Hello Harry, checkout our new website: www.thetimes.co.uk
+ */
+
+forbes.pushMessage('new iPhone has been released!');
+forbes.notify();
+/*
+Hello Olivia, new Iphone has been released!
+Hello Harry, new Iphone has been released!
+Hello Amelia, new Iphone has been released!
+ */
+
+// Amelia decided she is not interested into Forbes and unsubscribes
+forbes.unSubscribe(amelia);
+
+// let's dispatch another news
+forbes.pushMessage('Apple decides to stop supporting old iPhones');
+forbes.notify();
+/*
+Hello Olivia, Apple decides to stop supporting old iPhones
+Hello Harry, Apple decides to stop supporting old iPhones
+ */
