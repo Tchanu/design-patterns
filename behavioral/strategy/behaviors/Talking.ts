@@ -1,4 +1,4 @@
-export default interface Talking {
+export interface Talking {
   talk(): void;
 }
 

@@ -1,13 +1,12 @@
-import Flying from './behaviour/Flying';
-import Talking from './behaviour/Talking';
+import { Flying, Talking } from './behaviors';
 
-// in this example our context is Animal
+// Animal is a context. It delegates work to strategy objects(behaviors)
 export class Animal {
-    // first we define behaviour/strategies
+  // strategy objects
   private flying: Flying;
   private talking: Talking;
 
-    // client sets behaviours at runtime
+  // client sets behaviours at runtime
   constructor(flying: Flying, talking: Talking) {
     this.flying = flying;
     this.talking = talking;
