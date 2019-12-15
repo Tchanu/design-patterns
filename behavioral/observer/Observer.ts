@@ -1,19 +1,5 @@
-import { Zoo } from './Observable';
 
-// base observer
-export interface Observer {
-  update(): void;
-}
-
-// concrete observer
-export class Animal implements Observer {
-  constructor(
-    private zoo: Zoo,
-    private name: string,
-  ) {
-  }
-
-  update() {
-    console.log(`${this.name}: ${this.zoo.getMessage()}`);
-  }
+// Observer declares method which is invoked by Publisher when new data is emitted
+export interface Observer<T> {
+  update(data: T): void;
 }
