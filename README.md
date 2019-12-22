@@ -34,7 +34,7 @@
 💭Interpreter Pattern  
 🚦 [Mediator Pattern](/behavioral/mediator)  
 💾 [Memento Pattern](/behavioral/memento)  
-👽 Visitor Pattern  
+👽 [Visitor Pattern](/behavioral/visitor)  
 
  
 #### Other
