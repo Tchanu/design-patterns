@@ -8,7 +8,6 @@
 🥇 [Singleton Pattern](/creational/singleton)  
 🏗️ [Builder Pattern](/creational/builder)  
 🤖 [Prototype Pattern](/creational/prototype)  
-💉 Dependency injection  
 
 
 ### Structural
@@ -19,7 +18,6 @@
 🌉 [Bridge Pattern](/structural/bridge)  
 🏳️‍🌈 [Composite Pattern](/structural/composite)  
 🦋 [Flyweight Pattern](/structural/flyweight)  
-🗄️ Module Pattern  
 
 
 ### Behavioral
@@ -29,17 +27,10 @@
 👥 [Template Method Pattern](/behavioral/template-method)  
 ⏭️ [Iterator Pattern](/behavioral/iterator)  
 🧠 [State Pattern](/behavioral/state)  
-☢️ Null Object Pattern  
 ⛓️ [Chain of Responsibility Pattern](/behavioral/chain-of-responsibility)  
-💭Interpreter Pattern  
 🚦 [Mediator Pattern](/behavioral/mediator)  
 💾 [Memento Pattern](/behavioral/memento)  
 👽 [Visitor Pattern](/behavioral/visitor)  
-
- 
-#### Other
-➿ Fluent interface  
-
 
 ## Resources
 - [Design Patterns For Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
